@@ -19,3 +19,7 @@ mkdir -p bundle
 cd bundle
 git clone https://github.com/scrooloose/nerdtree.git nerdtree
 ```
+### 3. Replace your .vimrc with the one provided 
+```
+.vimrc is located in your home dir ~/.vimrc
+```
