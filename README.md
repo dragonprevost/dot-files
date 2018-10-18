@@ -1,7 +1,7 @@
-# vim_rc
+
 My personal vim configuration
-## Instructions For Mac OS Install
-# 1. Install Pathogen With Following Dir 
+# Instructions For Mac OS Install
+### 1. Install Pathogen With Following Dir 
 ```
 cd
 mkdir -p .vim/{autoload,colors,syntax,plugin,spell,config} \n
@@ -12,7 +12,7 @@ git clone https://github.com/tpope/vim-pathogen.git pathogen
 cd autoload
 ln -s ../pathogen/autoload/pathogen.vim 
 ```
-# 2. Install NERDTree
+### 2. Install NERDTree
 ```
 cd ~/.vim
 mkdir -p bundle
