@@ -3,8 +3,8 @@ My personal vim configuration
 ## Instructions For Mac OS Install
 # 1. Install Pathogen With Following Dir 
 `
-cd
-mkdir -p .vim/{autoload,colors,syntax,plugin,spell,config}
+cd \n
+mkdir -p .vim/{autoload,colors,syntax,plugin,spell,config} \n
 mv .vimrc .vim/vimrc
 ln -s .vim/vimrc .vimrc
 cd ~/.vim
