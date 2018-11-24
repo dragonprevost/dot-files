@@ -1,20 +1,16 @@
 syntax on
-set t_Co=256
-
-set nocompatible
-" Initialisation de pathogen
-call pathogen#infect()
-call pathogen#helptags()
-
 set number
-
+set nocompatible
+execute pathogen#infect()
 filetype plugin indent on
-syntax on
-runtime! config/**/*.vim
 
-autocmd VimEnter * NERDTree
+"Open NerdTree when no files specified
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
-autocmd VimEnter * wincmd p
+"Close NerdTree on last file quit
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
+"Allow for mouse Click
 set mouse=a
 let g:NERDTreeMouseMode=3
