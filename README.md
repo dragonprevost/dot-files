@@ -10,3 +10,5 @@ git clone https://github.com/dragonprevost/dot-files.git
 ```sh
 bash install.sh
 ```
+# Setup
+Adjustments to zsh and vim config files should be made within the dot-files folder.
