@@ -3,7 +3,8 @@ set nocompatible
 set number
 syntax on
 filetype plugin on
-colorscheme neonwave
+" Set colorscheme here (You have lots of options)
+" colorscheme neonwave
 
 " Tab Spacing
 set tabstop=4
