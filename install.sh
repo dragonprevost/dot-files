@@ -14,7 +14,7 @@ rm -rf fonts-install
 # Make sure files dont already exist
 rm ~/.zshrc
 rm ~/.vimrc
-rm -rf .vim/colors
+rm -rf ~/.vim/colors
 
 # Create links
 ln -s "$PWD/zshrc" ~/.zshrc
