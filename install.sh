@@ -4,6 +4,13 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 # Install zsh theme
 git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
 
+# Install fonts
+git clone https://github.com/powerline/fonts.git --depth=1 ./font-install
+cd fonts-install
+./install.sh
+cd ..
+rm -rf fonts-install
+
 # Make sure files dont already exist
 rm ~/.zshrc
 rm ~/.vimrc
