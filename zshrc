@@ -33,7 +33,8 @@ export TTC_SAY_BOX='parrot'
 export TTC_APIKEYS=false
 export TERM="screen-256color"
 
-alias cat=ccat
+alias cat='ccat'
+alias ls='lsd -1'
 alias gs='git status'
 alias gsh='git status ./'
 alias gdc='git diff --cached'
