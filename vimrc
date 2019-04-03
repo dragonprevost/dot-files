@@ -1,6 +1,7 @@
 " Basics
 set nocompatible
 set number
+set relativenumber
 syntax on
 filetype plugin on
  
@@ -16,6 +17,10 @@ set softtabstop=4
 " Finding Files
 set path+=**
 set wildmenu
+
+" Status Line
+set laststatus=2
+set statusline=\ %f
 
 " Tag Jumping
 command! MakeTags !ctags -R .
