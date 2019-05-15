@@ -22,6 +22,8 @@ set wildmenu
 set laststatus=2
 set statusline=\ %f
 
+" Plugins
+
 " Tag Jumping
 command! MakeTags !ctags -R .
 
