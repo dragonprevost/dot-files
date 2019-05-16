@@ -23,6 +23,11 @@ set wildmenu
 set laststatus=2
 set statusline=\ %f
 
+" Plugins
+call plug#begin('~/.vim/plugged')
+Plug 'https://github.com/leafgarland/typescript-vim.git'
+call plug#end()
+
 " Tag Jumping
 command! MakeTags !ctags -R .
 

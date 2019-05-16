@@ -19,4 +19,4 @@ rm -rf ~/.vim/colors
 # Create links
 ln -s "$PWD/zshrc" ~/.zshrc
 ln -s "$PWD/vimrc" ~/.vimrc
-ln -s "$PWD/colors" ~/.vim/colors
+ln -s "$PWD/vim" ~/.vim
