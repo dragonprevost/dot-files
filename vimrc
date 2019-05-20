@@ -24,7 +24,7 @@ set statusline=\ %f
 
 " Plugins
 call plug#begin('~/.vim/plugged')
-Plug 'https://github.com/leafgarland/typescript-vim.git'
+Plug 'leafgarland/typescript-vim', { 'for': ['typescript', 'tsx'] }
 call plug#end()
 
 " Tag Jumping
