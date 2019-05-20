@@ -11,6 +11,7 @@ colorscheme	neodark
 " Tab Spacing
 set tabstop=4
 set autoindent
+set smartindent
 set shiftwidth=4
 set softtabstop=4
 
