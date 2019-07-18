@@ -6,7 +6,7 @@ syntax on
 filetype plugin on
  
 " Set colorscheme here (You have lots of options)
-colorscheme	neodark
+colorscheme	vimbrant
 
 " Tab Spacing
 set tabstop=2
@@ -27,6 +27,7 @@ set statusline=\ %f
 " Plugins
 call plug#begin('~/.vim/plugged')
 Plug 'leafgarland/typescript-vim', { 'for': ['typescript', 'tsx'] }
+Plug 'https://github.com/zefei/cake16.git'
 call plug#end()
 
 " Tag Jumping
