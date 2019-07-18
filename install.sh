@@ -15,8 +15,10 @@ rm -rf fonts-install
 rm ~/.zshrc
 rm ~/.vimrc
 rm -rf ~/.vim
+rm ~/.tmux.conf
 
 # Create links
 ln -s "$PWD/zshrc" ~/.zshrc
 ln -s "$PWD/vimrc" ~/.vimrc
+ln -s "$PWD/tmux.conf" ~/.tmux.conf
 ln -s "$PWD/vim/" ~/.vim
