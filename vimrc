@@ -6,7 +6,7 @@ syntax on
 filetype plugin on
 
 " Set colorscheme here (You have lots of options)
-colorscheme	vimbrant
+colorscheme neodark
 
 " Tab Spacing
 set tabstop=2
