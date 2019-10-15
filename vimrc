@@ -4,7 +4,7 @@ set number
 set relativenumber
 syntax on
 filetype plugin on
- 
+
 " Set colorscheme here (You have lots of options)
 colorscheme	neodark
 
@@ -27,6 +27,7 @@ set statusline=\ %f
 " Plugins
 call plug#begin('~/.vim/plugged')
 Plug 'leafgarland/typescript-vim', { 'for': ['typescript', 'tsx'] }
+Plug 'larsbs/vimterial_dark'
 call plug#end()
 
 " Tag Jumping

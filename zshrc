@@ -13,7 +13,7 @@ POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(time)
 POWERLEVEL9K_SHORTEN_DIR_LENGTH=1
 
-plugins=(git async node)
+plugins=(git node)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -25,7 +25,7 @@ export NVM_DIR="$HOME/.nvm"
 
 export VISUAL=nvim
 export EDITOR="$VISUAL"
-
+export GOPATH='$HOME/go/bin'
 export TTC_REPOS_DEPTH=2
 export TTC_GITBOT='gitlog'
 export TTC_WEATHER='Victoria, BC'
@@ -34,6 +34,7 @@ export TTC_APIKEYS=false
 export TERM="screen-256color"
 
 alias cat='ccat'
+alias workdir='cd work/sesame/audette-docker/audette-frontend/'
 alias ls='lsd -1'
 alias gs='git status'
 alias gsh='git status ./'
@@ -50,3 +51,7 @@ alias grh='git reset --hard'
 alias gb='git branch'
 alias gch='git checkout'
 alias grf='git checkout --'
+
+# tabtab source for electron-forge package
+# uninstall by removing these lines or running `tabtab uninstall electron-forge`
+[[ -f /Users/dragon/aero/terry-mapper/node_modules/tabtab/.completions/electron-forge.zsh ]] && . /Users/dragon/aero/terry-mapper/node_modules/tabtab/.completions/electron-forge.zsh
