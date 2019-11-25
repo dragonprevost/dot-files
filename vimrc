@@ -2,19 +2,19 @@
 set nocompatible
 set number
 syntax on
-filetype plugin on
+"filetype plugin on
 
 " Set colorscheme here (You have lots of options)
 
 " Tab Spacing
 set tabstop=2
-set autoindent
-set smartindent
+"set autoindent
+"set smartindent
 set shiftwidth=2
 set softtabstop=2
 set expandtab
-set hlsearch
-set ruler
+"set hlsearch
+"set ruler
 
 " Finding Files
 set path+=**

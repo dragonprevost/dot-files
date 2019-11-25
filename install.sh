@@ -8,9 +8,6 @@ brew install tmux
 # Install zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
-# Install zsh theme
-git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
-
 # Install fonts
 git clone https://github.com/powerline/fonts.git --depth=1 ./fonts-install
 cd fonts-install

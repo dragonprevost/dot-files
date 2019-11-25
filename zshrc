@@ -1,10 +1,12 @@
 export EDITOR=vim
 export GOPATH='$HOME/go/bin'
 
-alias cat='ccat'
 alias workdir='cd work/sesame/audette-docker/audette-frontend/'
+alias pip='pip3'
+alias python='python3'
+alias ls='ls -1'
 alias gs='git status'
-alias gsh='git status ./'
+alias gst='git status ./'
 alias gdc='git diff --cached'
 alias gdch='git diff --cached ./'
 alias gdh='git diff ./'
