@@ -1,4 +1,3 @@
-1. put keyboard into dfu mode
-1. chmod u+x mdloader_mac
-1. ./mdloader_mac --first --download FILE_NAME --restart
-1. fn + B to get into dfu mode
+1. `make build`
+1. `make download file=<config_name>.bin`
+1. `(fn + B)` to get into dfu mode
