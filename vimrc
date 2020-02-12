@@ -1,6 +1,7 @@
 " Basics
 set nocompatible
 set number
+set background=dark
 syntax on
 "filetype plugin on
 
@@ -16,6 +17,11 @@ set expandtab
 "set hlsearch
 "set ruler
 
+" Save cursor position
+if has("autocmd")
+  au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
+endif
+
 " Finding Files
 set path+=**
 set wildmenu
@@ -28,6 +34,7 @@ set statusline=\ %f
 call plug#begin('~/.vim/plugged')
 Plug 'leafgarland/typescript-vim', { 'for': ['typescript', 'tsx'] }
 Plug 'https://github.com/zefei/cake16.git'
+Plug 'https://github.com/vim-syntastic/syntastic.git'
 call plug#end()
 
 " Tag Jumping

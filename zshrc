@@ -1,9 +1,12 @@
 export EDITOR=vim
 export GOPATH='$HOME/go/bin'
+export PATH_TO_FX='~/Java/javafx-sdk-11.0.2/lib'
+export PATH_TO_FX_MODS='~/Java/javafx-sdk-11.0.2/lib'
 
 alias workdir='cd work/sesame/audette-docker/audette-frontend/'
 alias pip='pip3'
 alias python='python3'
+alias activate='source venv/bin/activate'
 alias ls='ls -1'
 alias gs='git status'
 alias gst='git status ./'

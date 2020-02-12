@@ -1,11 +1,23 @@
 install-mac:
 	# Install Package Manager
 	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-	
-	# Install Applications
-	brew install vim
-	brew install tmux
+	# Install oh my zsh
+	sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"	
 
+	# Install Applications
+	# brew install vim
+	# brew install tmux
+	# Install Keyboard Env Dependencies
+	brew tap osx-cross/avr
+	brew tap osx-cross/arm
+	brew update
+	brew install avr-gcc@8
+	brew link --force avr-gcc@8
+	brew install dfu-programmer
+	brew install dfu-util
+	brew install arm-gcc-bin@8
+	brew link --force arm-gcc-bin@8
+	brew install avrdude
 	# Install zsh
 	sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
