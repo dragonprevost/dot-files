@@ -3,6 +3,9 @@ set nocompatible
 set number
 set background=dark
 syntax on
+set cursorline
+highlight CursorLineNr cterm=NONE ctermbg=15 ctermfg=8 gui=NONE guibg=#ffffff guifg=#d70000
+
 "filetype plugin on
 
 " Set colorscheme here (You have lots of options)
