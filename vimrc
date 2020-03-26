@@ -4,6 +4,9 @@ set number
 set background=dark
 syntax on
 set cursorline
+
+" Line number highlighting
+highlight CursorLine cterm=NONE ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE
 highlight CursorLineNr cterm=NONE ctermbg=15 ctermfg=8 gui=NONE guibg=#ffffff guifg=#d70000
 
 "filetype plugin on
