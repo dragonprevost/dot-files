@@ -25,8 +25,6 @@ alias gb='git branch'
 alias gco='git checkout'
 alias grf='git checkout --'
 
-tmux
-
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/dragon/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/dragon/Downloads/google-cloud-sdk/path.zsh.inc'; fi
 
