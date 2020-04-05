@@ -9,7 +9,7 @@ alias python='python3'
 alias activate='source venv/bin/activate'
 
 alias gd='git diff'
-alias ls='ls -1'
+alias ls='ls'
 alias gs='git status'
 alias gst='git status ./'
 alias gdc='git diff --cached'
