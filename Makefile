@@ -3,10 +3,9 @@ install-mac:
 	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 	# Install oh my zsh
 	sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"	
-
 	# Install Applications
-	# brew install vim
-	# brew install tmux
+	brew install vim
+	brew install tmux
 	# Install Keyboard Env Dependencies
 	brew tap osx-cross/avr
 	brew tap osx-cross/arm
@@ -20,20 +19,18 @@ install-mac:
 	brew install avrdude
 	# Install zsh
 	sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
+	git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/dot-files/powerlevel10k
 	# Install fonts
 	git clone https://github.com/powerline/fonts.git --depth=1 ./fonts-install
 	cd fonts-install
 	bash install.sh
 	cd ..
 	rm -rf fonts-install
-
 	# Make sure files dont already exist
 	rm ~/.zshrc
 	rm ~/.vimrc
 	rm -rf ~/.vim
 	rm ~/.tmux.conf
-
 	# Create links
 	ln -s "$PWD/zshrc" ~/.zshrc
 	ln -s "$PWD/vimrc" ~/.vimrc
@@ -51,3 +48,6 @@ install-linux:
 	sudo apt install vim
 	sudo apt install tmux
 
+uninstall:
+	rm ~/.zshrc
+	rm ~/.vimrc
