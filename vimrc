@@ -40,8 +40,5 @@ call plug#begin('~/.vim/plugged')
 " Plugins go here... :D
 call plug#end()
 
-nmap <silent> gd <Plug>(coc-definition)
-nmap <silent> gr <Plug>(coc-reference)
-
 " Remove trailing white space
 autocmd BufWritePre * %s/\s\+$//e
