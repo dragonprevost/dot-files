@@ -2,8 +2,9 @@
 set nocompatible
 set number
 set background=dark
-syntax on
 set cursorline
+set relativenumber
+syntax on
 
 " Line number highlighting
 highlight CursorLine cterm=NONE ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE
@@ -15,13 +16,11 @@ highlight CursorLineNr cterm=NONE ctermbg=15 ctermfg=8 gui=NONE guibg=#ffffff gu
 
 " Tab Spacing
 set tabstop=2
-"set autoindent
-"set smartindent
+set smartindent
 set shiftwidth=2
 set softtabstop=2
 set expandtab
-"set hlsearch
-"set ruler
+
 
 " Save cursor position
 if has("autocmd")
@@ -38,21 +37,11 @@ set statusline=\ %f
 
 " Plugins
 call plug#begin('~/.vim/plugged')
-Plug 'leafgarland/typescript-vim', { 'for': ['typescript', 'tsx'] }
-Plug 'https://github.com/zefei/cake16.git'
-Plug 'https://github.com/vim-syntastic/syntastic.git'
+" Plugins go here... :D
 call plug#end()
 
-" Tag Jumping
-command! MakeTags !ctags -R .
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gr <Plug>(coc-reference)
 
-" File Browsing
-let g:netrw_banner=0        " disable annoying banner
-let g:netrw_browse_split=4  " open in prior window
-let g:netrw_altv=1          " open splits to the right
-let g:netrw_liststyle=3     " tree view
-let g:netrw_list_hide=netrw_gitignore#Hide()
-let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
-
-" Templates / Snippets
-nnoremap ,component :-1read $HOME/.vim/templates/component.js<CR>3Gwce
+" Remove trailing white space
+autocmd BufWritePre * %s/\s\+$//e
