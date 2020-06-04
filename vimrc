@@ -4,6 +4,7 @@ set number
 set background=dark
 set cursorline
 set relativenumber
+set backspace=indent,eol,start
 syntax on
 
 " Line number highlighting
