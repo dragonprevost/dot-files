@@ -4,7 +4,6 @@ set number
 set background=dark
 set cursorline
 set relativenumber
-set backspace=indent,eol,start
 syntax on
 
 " Line number highlighting
@@ -34,8 +33,10 @@ set statusline=\ %f
 
 " Plugins
 call plug#begin('~/.vim/plugged')
-" Plugins go here... :D
+Plug 'joshdick/onedark.vim'
 call plug#end()
+
+colorscheme onedark
 
 " Remove trailing white space
 autocmd BufWritePre * %s/\s\+$//e
