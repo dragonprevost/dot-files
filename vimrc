@@ -1,10 +1,11 @@
 " Basics
+syntax on
 set nocompatible
 set number
 set background=dark
 set cursorline
 set relativenumber
-syntax on
+set incsearch
 
 " Line number highlighting
 highlight CursorLine cterm=NONE ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE
@@ -36,9 +37,8 @@ set statusline=\ %f
 
 " Plugins
 call plug#begin('~/.vim/plugged')
-" Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'jpo/vim-railscasts-theme'
 Plug 'joshdick/onedark.vim'
+Plug 'ycm-core/YouCompleteMe'
 call plug#end()
 
 colorscheme onedark
