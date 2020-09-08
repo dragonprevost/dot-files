@@ -4,7 +4,6 @@ set number
 set background=dark
 set cursorline
 set relativenumber
-set backspace=indent,eol,start
 syntax on
 
 " Line number highlighting
@@ -17,6 +16,7 @@ set smartindent
 set shiftwidth=2
 set softtabstop=2
 set expandtab
+set colorcolumn=120
 
 
 " Save cursor position
@@ -27,6 +27,8 @@ endif
 " Finding Files
 set path+=**
 set wildmenu
+set wildignore+=*.pyc
+set wildignore+=**/node_modules/**
 
 " Status Line
 set laststatus=2
@@ -34,8 +36,12 @@ set statusline=\ %f
 
 " Plugins
 call plug#begin('~/.vim/plugged')
-" Plugins go here... :D
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'jpo/vim-railscasts-theme'
+Plug 'joshdick/onedark.vim'
 call plug#end()
+
+colorscheme onedark
 
 " Remove trailing white space
 autocmd BufWritePre * %s/\s\+$//e
