@@ -1,31 +1,20 @@
 " Basics
-syntax on
-set nocompatible
+syntax enable
 set number
-set background=dark
 set cursorline
 set relativenumber
+set background=dark
+set colorcolumn=80
 set incsearch
 
-" Line number highlighting
-highlight CursorLine cterm=NONE ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE
-highlight CursorLineNr cterm=NONE ctermbg=15 ctermfg=8 gui=NONE guibg=#ffffff guifg=#d70000
-
-" Tab Spacing
+" Indentation
 set tabstop=2
 set smartindent
 set shiftwidth=2
 set softtabstop=2
 set expandtab
-set colorcolumn=120
 
-
-" Save cursor position
-if has("autocmd")
-  au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
-endif
-
-" Finding Files
+" File Search
 set path+=**
 set wildmenu
 set wildignore+=*.pyc
@@ -36,12 +25,25 @@ set laststatus=2
 set statusline=\ %f
 
 " Plugins
-call plug#begin('~/.vim/plugged')
-Plug 'joshdick/onedark.vim'
+call plug#begin('~/.config/nvim/plugged')
+Plug 'morhetz/gruvbox'
 Plug 'ycm-core/YouCompleteMe'
+Plug 'vim-airline/vim-airline'
+Plug 'tpope/vim-fugitive'
 call plug#end()
 
-colorscheme onedark
+colorscheme gruvbox
 
-" Remove trailing white space
+" Remove Trailing Whitespace
 autocmd BufWritePre * %s/\s\+$//e
+
+" Save Cursor Position
+if has("autocmd")
+  au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "nor    mal! g`\"" | endif
+endif
+
+" Jump to Definition
+map <Space> <Leader>
+nnoremap <silent> <Leader>gd :YcmCompleter GoTo<CR>
+nnoremap <silent> <Leader>gf :YcmCompleter FixIt<CR>
+
