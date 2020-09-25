@@ -13,7 +13,7 @@ install-mac:
 	rm ~/.tmux.conf
 	ln -s "$PWD/zshrc" ~/.zshrc
 	ln -s "$PWD/tmux.conf" ~/.tmux.conf
-	ln -s "$PWD/nvim" ~/.config/nvim
+	ln -s "$PWD/init.vim" ~/.config/nvim/init.vim
 
 install-qmk:
 	# Install Keyboard Env Dependencies
