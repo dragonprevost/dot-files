@@ -11,6 +11,8 @@ install-mac:
 	brew install tmux
 	rm ~/.zshrc
 	rm ~/.tmux.conf
+
+	ln -s "$PWD/powerlevel10k" ~/powerlevel10k
 	ln -s "$PWD/zshrc" ~/.zshrc
 	ln -s "$PWD/tmux.conf" ~/.tmux.conf
 	ln -s "$PWD/init.vim" ~/.config/nvim/init.vim

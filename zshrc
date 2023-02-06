@@ -5,7 +5,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 export EDITOR=nvim
-export GOPATH='$HOME/go/bin'
+export GOPATH='/usr/local/go/bin'
 export PATH_TO_FX='~/Java/javafx-sdk-11.0.2/lib'
 export PATH_TO_FX_MODS='~/Java/javafx-sdk-11.0.2/lib'
 export PATH="/Applications/snap/bin:$PATH"
